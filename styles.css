@@ -1,0 +1,37 @@
+/* font-family: 'Amatic SC', cursive;
+font-family: 'Averia Serif Libre', cursive;
+font-family: 'Rubik Mono One', sans-serif;
+font-family: 'Shrikhand', cursive; */
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Rubik+Mono+One&family=Shrikhand&display=swap');
+
+body {
+  font-family: 'Averia Serif Libre', cursive;
+  /* background-color: #DFFF00; */
+  /* background-color: #80b918; */
+  /* background-color: #e9ce2c; */
+  background-color: #deaf13;
+}
+#gridContainer {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+#statContainer {
+  text-align: right;
+  padding-right: 10px;
+  font-size: 14px;
+}
+#visualizerContainer {
+  position: relative;
+  height: 96vh;
+  border-left: 1px solid black;
+}
+.visualizerTextEntry {
+  position: absolute;
+  text-align: right;
+  font-size: 12px;
+}
+#title{
+  font-size: 18px;
+  padding-top: 44vh;
+}
