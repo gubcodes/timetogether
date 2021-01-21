@@ -1,81 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="apple-touch-icon" sizes="57x57" href="./assets/">
+  <link rel="apple-touch-icon" sizes="60x60" href="./assets/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./assets/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./assets/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./assets/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./assets/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./assets/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./assets/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+  <link rel="manifest" href="./assets/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="./assets/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
   <title>timeTogether</title>
   <link rel='stylesheet' href='./styles.css'>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Rubik+Mono+One&family=Shrikhand&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Rubik+Mono+One&family=Shrikhand&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
   <div id='gridContainer'>
-  <div id='statContainer'>
-    <div id='title'>
-      <b>time<em>Together</em></b>
+    <div id='statContainer'>
+      <div id='title'>
+        <b>time<em>Together</em></b>
+      </div>
+      <!-- !TOGETHER -->
+      <br>
+      <div>
+        <em>together for:</em>
+      </div>
+      <!-- days -->
+      <div>
+        <span id='togetherDays'></span>
+        days
+      </div>
+      <!-- years-ish -->
+      <div>
+        <span id='togetherYears'></span>
+        years
+      </div>
+      <!-- percentage of l's life -->
+      <div>
+        <span id='lDateJPercent'></span>
+        of lyndsay's life
+      </div>
+      <!-- percentage of j's life -->
+      <div>
+        <span id='jDateLPercent'></span>
+        of jesse's life
+      </div>
+      <br>
+      <!-- !MARRIED -->
+      <div>
+        <em>married for:</em>
+      </div>
+      <!-- days -->
+      <div>
+        <span id='marriedDays'></span>
+        days
+      </div>
+      <!-- years-ish -->
+      <div>
+        <span id='marriedYears'></span>
+        years
+      </div>
+      <!-- percentage of l's life -->
+      <div>
+        <span id='lMarryJPercent'></span>
+        of lyndsay's life
+      </div>
+      <!-- percentage of j's life -->
+      <div>
+        <span id='jMarryLPercent'></span>
+        of jesse's life
+      </div>
     </div>
-  <!-- !TOGETHER -->
-  <br>
-  <div>
-    <em>together for:</em>
-  </div>
-  <!-- days -->
-  <div>
-    <span id='togetherDays'></span>
-    days
-  </div>
-  <!-- years-ish -->
-  <div>
-    <span id='togetherYears'></span>
-    years
-  </div>
-  <!-- percentage of l's life -->
-  <div>
-    <span id='lDateJPercent'></span>
-    of lyndsay's life
-  </div>
-  <!-- percentage of j's life -->
-  <div>
-    <span id='jDateLPercent'></span>
-    of jesse's life
-  </div>
-  <br>
-  <!-- !MARRIED -->
-  <div>
-    <em>married for:</em>
-  </div>
-  <!-- days -->
-  <div>
-    <span id='marriedDays'></span>
-    days
-  </div>
-  <!-- years-ish -->
-  <div>
-    <span id='marriedYears'></span>
-    years
-  </div>
-  <!-- percentage of l's life -->
-  <div>
-    <span id='lMarryJPercent'></span>
-    of lyndsay's life
-  </div>
-  <!-- percentage of j's life -->
-  <div>
-    <span id='jMarryLPercent'></span>
-    of jesse's life
-  </div>
-</div>
-  <!-- !VISUALIZATION -->
-  
-  <div id='visualizerContainer'>
+    <!-- !VISUALIZATION -->
+
+    <div id='visualizerContainer'>
       <div class='visualizerTextEntry' id='visJ'>- 1988: jesse's birth</div>
       <div class='visualizerTextEntry' id='visL'>- 1990: lyndsay's birth</div>
       <div class='visualizerTextEntry' id='visD'>- 2007: fall in love</div>
       <div class='visualizerTextEntry' id='visE'>- 2017: engaged</div>
       <div class='visualizerTextEntry' id='visW'>- 2018: married</div>
       <div class='visualizerTextEntry' id='visT'>- <span id='visTSpan'></span>still in love today</div>
+    </div>
   </div>
-</div>
   <script src='scripts.js'></script>
 </body>
+
 </html>
