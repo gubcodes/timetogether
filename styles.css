@@ -20,6 +20,39 @@ body {
   text-align: right;
   padding-right: 10px;
   font-size: 14px;
+  /* animation: fadeIn 1s ease-in;
+  animation-fill-mode: forwards; */
+}
+
+#blurContainer {
+  animation: blurIn 3s ease-in;
+  animation-fill-mode: forwards;
+  animation-delay: 5s;
+  opacity: 0;
+  /* animation: fadeIn 1s ease-in;
+  animation-fill-mode: forwards; */
+}
+@keyframes blurIn {
+  0% { filter: blur(8px);
+    opacity: 0;
+  }
+  50% { filter: blur(4px);
+    opacity: 1;
+  }
+  100% { filter: blur(0px);
+    opacity: 1;
+  }
+}
+#title{
+  font-size: 18px;
+  padding-top: 44vh;
+  opacity: 0;
+  animation: fadeIn 2s linear;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeIn {
+  0% { opacity: 0;}
+  100% { opacity: 1;}
 }
 #visualizerContainer {
   position: relative;
@@ -31,7 +64,17 @@ body {
   text-align: right;
   font-size: 12px;
 }
-#title{
-  font-size: 18px;
-  padding-top: 44vh;
+#animationYellow {
+  position: absolute;
+  background-color: #deaf13;
+  height: 100%;
+  width: 100%;
+  margin-left: -5px;
+  animation: example 7s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: .75s;
+}
+@keyframes example {
+  from {height: 100%;}
+  to {height: 0%;}
 }
