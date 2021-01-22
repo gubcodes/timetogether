@@ -10,7 +10,7 @@ body {
   /* background-color: #DFFF00; */
   /* background-color: #80b918; */
   /* background-color: #e9ce2c; */
-  background-color: #deaf13;
+  background-color: #c99e12;
 }
 #gridContainer {
   display: grid;
@@ -66,7 +66,7 @@ body {
 }
 #animationYellow {
   position: absolute;
-  background-color: #deaf13;
+  background-color: #c99e12;
   height: 100%;
   width: 101%;
   margin-left: -5px;
