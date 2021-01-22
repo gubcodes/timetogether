@@ -33,10 +33,10 @@ body {
   animation-fill-mode: forwards; */
 }
 @keyframes blurIn {
-  0% { filter: blur(8px);
+  0% { filter: blur(4px);
     opacity: 0;
   }
-  50% { filter: blur(4px);
+  50% { filter: blur(2px);
     opacity: 1;
   }
   100% { filter: blur(0px);
@@ -61,14 +61,14 @@ body {
 }
 .visualizerTextEntry {
   position: absolute;
-  text-align: right;
+  text-align: left;
   font-size: 12px;
 }
 #animationYellow {
   position: absolute;
   background-color: #deaf13;
   height: 100%;
-  width: 100%;
+  width: 101%;
   margin-left: -5px;
   animation: example 7s ease-in-out;
   animation-fill-mode: forwards;
@@ -77,4 +77,7 @@ body {
 @keyframes example {
   from {height: 100%;}
   to {height: 0%;}
+}
+.transparent {
+  opacity: 0;
 }

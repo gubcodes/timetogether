@@ -5,11 +5,16 @@ let birth2 = new Date('01/24/1990').getTime(); //ms 1/1/1970 - l birth
 let dating = new Date('09/16/2007').getTime(); //ms 1/1/1970 - first "date"
 let engagement = new Date('10/15/2017').getTime(); //ms 1/1/1970 - engagement
 let wedding = new Date('10/12/2018').getTime(); //ms 1/1/1970 - wedding
+//!RANDO
+
+
 let jAge = since1970 - birth1;
 let lAge = since1970 - birth2;
 let datingLength = since1970 - dating; //ms since we started dating
 let engagementLength = since1970 - engagement; //ms since we got engaged
 let weddingLength = since1970 - wedding; //ms since we got married
+//!RANDO
+
 
 //turn ms into years:
 function years(date) {
@@ -36,8 +41,10 @@ let lDays = days(lAge);
 let dDays = days(datingLength);
 let eDays = days(engagementLength);
 let wDays = days(weddingLength);
+let mDays = dDays / 29.5;
 let dYears = years(datingLength);
 let wYears = years(weddingLength);
+
 console.log("percentage of life j has been dating l");
 percentage(jDays, dDays);
 console.log("percentage of life since j got engaged");
@@ -54,6 +61,8 @@ document.getElementById('togetherYears').innerText = `${dYears.toFixed(2)}-ish`;
 document.getElementById('lDateJPercent').innerText = `${percentage(lDays, dDays)}%`;
 //percentage of j's life
 document.getElementById('jDateLPercent').innerText = `${percentage(jDays, dDays)}%`;
+//moon cycles
+document.getElementById('moonCycle').innerText = parseInt(mDays);
 
 //!MARRIED
 //days
@@ -61,13 +70,13 @@ document.getElementById('marriedDays').innerText = parseInt(wDays);
 //years-ish
 document.getElementById('marriedYears').innerText = `${wYears.toFixed(2)}-ish`;
 //percentage of l's life
-document.getElementById('lMarryJPercent').innerText = `${percentage(lDays, wDays)}%`;
+// document.getElementById('lMarryJPercent').innerText = `${percentage(lDays, wDays)}%`;
 //percentage of j's life
-document.getElementById('jMarryLPercent').innerText = `${percentage(jDays, wDays)}%`;
+// document.getElementById('jMarryLPercent').innerText = `${percentage(jDays, wDays)}%`;
 
 //!VISUALIZATION TEXT
 //j birth
-document.getElementById('visJ').style.top = '97%';
+document.getElementById('visJ').style.top = '97.5%';
 //l birth
 document.getElementById('visL').style.top = '94%';
 //dating
@@ -79,3 +88,21 @@ document.getElementById('visW').style.top = `${percentage(jDays, wDays)}%`;
 //today
 document.getElementById('visT').style.top = '0%';
 document.getElementById('visTSpan').innerText = `${currentYear}: `;
+
+//!RANDO
+let harryPotter = new Date('07/26/1997').getTime();
+let y2k = new Date('10/01/1999').getTime();
+
+let harryAge = since1970 - harryPotter;
+let y2kAge = since1970 - y2k;
+
+let harryDays = days(harryAge);
+let y2kDays = days(y2kAge);
+
+let event1 = "- 1997: Harry Potter and <br><span class='transparent'>- </span>the Sorcerer's Stone <br><span class='transparent'>- </span>is released";
+let date1 = harryDays;
+let event2 = "- 1999: y2k"
+let date2 = y2kDays
+
+// document.getElementById('randomEvent').innerHTML = event2;
+// document.getElementById('randomEvent').style.top = `${percentage(jDays, date2)}%`;
