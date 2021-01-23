@@ -11,11 +11,11 @@ body {
   /* background-color: #80b918; */
   /* background-color: #e9ce2c; */
   background-color: #c99e12;
-  height: 98vh;
 }
 #gridContainer {
   display: grid;
   grid-template-columns: 50% 50%;
+  height: 100vh;
 }
 #statContainer {
   text-align: right;
