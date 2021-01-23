@@ -15,7 +15,7 @@ body {
 #gridContainer {
   display: grid;
   grid-template-columns: 50% 50%;
-  height: 100vh;
+  height: 94vh;
 }
 #statContainer {
   text-align: right;
@@ -57,7 +57,7 @@ body {
 }
 #visualizerContainer {
   position: relative;
-  height: 96vh;
+  height: 90vh;
   border-left: 1px solid black;
 }
 .visualizerTextEntry {
